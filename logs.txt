@@ -1,0 +1,14 @@
+* e2c39be Implement filterTasksByCategory method
+| *   0831f15 Merge pull request #10 from angelavasilevska/5-filter-tasks-by-category
+| |\  
+| | * 42ec18d Merge branch 'master' into 5-filter-tasks-by-category
+| |/| 
+|/|/  
+| *   4ba91b3 Merge pull request #11 from angelavasilevska/3-list-tasks-sorted-by-name
+| |\  
+| | * 6bcff69 Implement listTasksSortedByName method
+| |/  
+* / f2623dd Implement filterTasksByCategory method
+|/  
+* 9b43c16 Add starter code
+* 92a0706 Initial commit
