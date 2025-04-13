@@ -58,6 +58,24 @@ class TaskManager {
         for (Task task : tasks) {
             System.out.println(task);
         }
+        public List<Task> listTasksSortedByName() {
+            return tasks.stream()
+                    .sorted(Comparator.comparing(Task::getName))
+                    .collect(Collectors.toList());
+        }
+        public void removeTaskByName(String name) {
+            tasks.removeIf(task -> task.getName().equalsIgnoreCase(name));
+        }
+        public List<Task> filterTasksByCategory(String category) {
+            List<Task> filtered = new ArrayList<>();
+            for (Task task : tasks) {
+                if (task.getCategory().equalsIgnoreCase(category)) {
+                    filtered.add(task);
+                }
+            }
+            return filtered;
+        }
+
     }
 
     // MISSING FEATURES:
